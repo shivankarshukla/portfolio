@@ -240,7 +240,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             whileHover={{ scale: 1.02 }}
           >
-            Hello, I'm{' '}
+            Hello, I&apos;m{' '}
             <span style={{
               background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)',
               WebkitBackgroundClip: 'text',
@@ -508,7 +508,8 @@ export const Hero = () => {
               }}
             />
 
-            {/* Custom Vector Image */}
+            {/* Custom Vector Image - unoptimized per next.config for static export */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/home_image.png"
               alt="Shivankar Shukla Profile"

@@ -163,7 +163,7 @@ export const ContactForm = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        Let's Work Together
+        Let&apos;s Work Together
       </motion.h3>
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -490,7 +490,7 @@ export const ContactForm = () => {
               fontSize: '0.9rem'
             }}
           >
-            ✅ Thank you for your message! I'll get back to you soon.
+            ✅ Thank you for your message! I&apos;ll get back to you soon.
           </motion.div>
         )}
         

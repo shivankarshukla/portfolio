@@ -323,7 +323,7 @@ export const Contact = () => {
             color: '#374151',
             marginBottom: '0.8rem'
           }}>
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p style={{
             color: '#374151',
@@ -333,8 +333,8 @@ export const Contact = () => {
             maxWidth: '600px',
             margin: '0 auto 1.5rem'
           }}>
-            I'm always open to new opportunities and interesting projects.
-            Feel free to reach out if you'd like to collaborate!
+            I&apos;m always open to new opportunities and interesting projects.
+            Feel free to reach out if you&apos;d like to collaborate!
           </p>
           <motion.a
             href="mailto:shuklagkp.7119@gmail.com"

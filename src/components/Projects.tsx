@@ -318,6 +318,7 @@ export const Projects = () => {
                 }}
                 transition={{ duration: 0.3 }}
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={project.image}
                   alt={project.title}

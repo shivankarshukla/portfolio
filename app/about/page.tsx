@@ -88,12 +88,12 @@ export default function About() {
               <div className="section-box">
                 <h2 className="heading-md mb-6">Background</h2>
                 <p className="text-[#8892b0] leading-relaxed mb-4">
-                  I'm a Techops Engineer at Paytm, specializing in deploying and optimizing TPAP UPI systems.
+                  I&apos;m a Techops Engineer at Paytm, specializing in deploying and optimizing TPAP UPI systems.
                   My focus is on driving superior performance and operational efficiency through automation
                   and robust monitoring systems.
                 </p>
                 <p className="text-[#8892b0] leading-relaxed">
-                  With experience in both technical operations and software development, I've contributed to
+                  With experience in both technical operations and software development, I&apos;ve contributed to
                   significant improvements in system reliability and performance across various projects.
                 </p>
               </div>

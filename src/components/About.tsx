@@ -267,7 +267,7 @@ export const About = () => {
             maxWidth: '800px',
             margin: '0 auto'
           }}>
-            I'm a passionate Techops Engineer with expertise in system optimization, 
+            I&apos;m a passionate Techops Engineer with expertise in system optimization, 
             automation, and performance monitoring. I love building scalable solutions 
             that drive operational excellence and improve system reliability.
           </p>

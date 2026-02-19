@@ -64,7 +64,7 @@ export const SectionNavigation = () => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [sections]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
