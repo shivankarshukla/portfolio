@@ -165,7 +165,7 @@ export default function About() {
           </div>
 
           <div className="flex justify-center mt-16">
-            <Link href="/experience" className="link-button">
+            <Link href="/#experience" className="link-button">
               View My Experience →
             </Link>
           </div>

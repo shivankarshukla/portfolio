@@ -1,6 +1,19 @@
 import { Inter, Poppins, Space_Grotesk, Fira_Code } from "next/font/google";
 import "./globals.css";
 import { ClientThemeProvider } from "@/src/components/ClientThemeProvider";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shivankar Shukla - Techops Engineer Portfolio",
+  description: "Portfolio of Shivankar Shukla, Techops Engineer at Paytm specializing in TPAP UPI systems, automation, and performance optimization.",
+  keywords: ["Shivankar Shukla", "Techops Engineer", "Paytm", "UPI", "System Optimization", "Portfolio"],
+  authors: [{ name: "Shivankar Shukla" }],
+  robots: "index, follow",
+  openGraph: {
+    title: "Shivankar Shukla - Techops Engineer Portfolio",
+    description: "Portfolio of Shivankar Shukla, Techops Engineer at Paytm specializing in TPAP UPI systems, automation, and performance optimization.",
+  },
+};
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({ 
@@ -26,11 +39,6 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable} ${firaCode.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="Portfolio of Shivankar Shukla, Techops Engineer at Paytm specializing in TPAP UPI systems, automation, and performance optimization." />
-        <meta name="keywords" content="Shivankar Shukla, Techops Engineer, Paytm, UPI, System Optimization, Portfolio" />
-        <meta name="author" content="Shivankar Shukla" />
-        <meta name="robots" content="index, follow" />
-        <title>Shivankar Shukla - Techops Engineer Portfolio</title>
       </head>
       <body className="font-poppins">
         <ClientThemeProvider>
