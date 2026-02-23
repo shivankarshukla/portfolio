@@ -7,7 +7,7 @@ import { Projects } from '@/src/components/Projects';
 import { Contact } from '@/src/components/Contact';
 import { ScrollToTop } from '@/src/components/ScrollToTop';
 import { LoadingScreen } from '@/src/components/LoadingScreen';
-import { ScrollProgress, SectionNavigation } from '@/src/components/ScrollProgress';
+import { ScrollProgress } from '@/src/components/ScrollProgress';
 import { useScrollReveal } from '@/src/hooks/useScrollReveal';
 import { useState } from 'react';
 
@@ -26,7 +26,6 @@ export default function Home() {
         <>
           <Header />
           <ScrollProgress />
-          <SectionNavigation />
           <Hero />
           <About />
           <Projects />
