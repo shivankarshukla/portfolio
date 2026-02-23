@@ -4,6 +4,7 @@ import { ClientThemeProvider } from "@/src/components/ClientThemeProvider";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shivankar.vercel.app"),
   title: "Shivankar Shukla - Techops Engineer Portfolio",
   description: "Portfolio of Shivankar Shukla, Techops Engineer at Paytm specializing in TPAP UPI systems, automation, and performance optimization.",
   keywords: ["Shivankar Shukla", "Techops Engineer", "Paytm", "UPI", "System Optimization", "Portfolio"],
