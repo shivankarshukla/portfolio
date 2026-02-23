@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 export const ScrollProgress = () => {
   const { scrollYProgress } = useScroll();
@@ -34,14 +34,16 @@ export const ScrollProgress = () => {
   );
 };
 
+const SECTION_IDS = [
+  { id: 'hero', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' }
+] as const;
+
 export const SectionNavigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
-  const sections = [
-    { id: 'hero', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' }
-  ];
+  const sections = useMemo(() => SECTION_IDS, []);
 
   useEffect(() => {
     const observerOptions = {
