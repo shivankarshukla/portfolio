@@ -16,6 +16,7 @@ export const Hero = () => {
   return (
     <section id="hero" style={{
       minHeight: '100vh',
+      minHeight: '100dvh',
       width: '100%',
       maxWidth: '100vw',
       background: 'linear-gradient(135deg, #f0f9ff 0%, #fef3c7 25%, #fce7f3 50%, #e0f2fe 75%, #f0fdf4 100%)',
