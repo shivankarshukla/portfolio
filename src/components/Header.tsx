@@ -114,8 +114,8 @@ export const Header = () => {
           </div>
         </div>
         
-        {/* Navigation */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+        {/* Navigation - scrollable on mobile so Home, Resume, Projects, Contact all reachable */}
+        <nav className="header-nav-wrap" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <ThemeToggle />
           <ul className="header-nav">
             <li>

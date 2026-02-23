@@ -227,7 +227,7 @@ export const Projects = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="magnetic"
+              className="magnetic project-row"
               style={{
                 display: 'grid',
                 gridTemplateColumns: index % 2 === 0 ? '1fr 1fr' : '1fr 1fr',
@@ -248,7 +248,7 @@ export const Projects = () => {
               }}
             >
               {/* Project Content */}
-              <div style={{
+              <div className="project-row-content" style={{
                 order: index % 2 === 0 ? 1 : 2,
                 padding: index % 2 === 0 ? '0 2rem 0 0' : '0 0 0 2rem'
               }}>
@@ -303,7 +303,7 @@ export const Projects = () => {
 
               {/* Project Image */}
               <motion.div
-                className="hover-lift tilt-effect"
+                className="hover-lift tilt-effect project-row-image"
                 style={{
                   order: index % 2 === 0 ? 2 : 1,
                   borderRadius: '12px',
