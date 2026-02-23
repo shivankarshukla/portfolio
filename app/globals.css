@@ -280,8 +280,8 @@ body {
   }
 }
 
-/* Mobile Viewport Fix - ensure page scrolls on touch devices */
-@media (max-width: 767px) {
+/* Mobile Viewport Fix - ensure page scrolls on touch devices (768px = tablet portrait and below) */
+@media (max-width: 768px) {
   html, body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
@@ -323,7 +323,7 @@ body {
 }
 
 /* Mobile responsive text sizes */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem !important;
     line-height: 1.2 !important;
@@ -370,7 +370,7 @@ body {
   gap: 0.5rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-nav {
     gap: 1rem;
     font-size: 0.9rem;
@@ -399,7 +399,7 @@ body {
 }
 
 /* About Section Mobile Responsive */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #about {
     padding: 4rem 1rem !important;
     overflow-x: hidden !important;
@@ -433,7 +433,7 @@ body {
 }
 
 /* Projects Section Mobile Responsive */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .projects-grid .project-item {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
@@ -452,7 +452,7 @@ body {
 }
 
 /* Contact Section Mobile Responsive */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
@@ -812,7 +812,7 @@ a {
 }
 
 /* Scroll to Top Button Responsive - 44px min tap target */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .scroll-to-top-btn {
     width: 52px !important;
     height: 52px !important;
@@ -1027,7 +1027,7 @@ a {
 }
 
 /* Responsive Theme Toggle */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .theme-toggle {
     width: 50px !important;
     height: 28px !important;

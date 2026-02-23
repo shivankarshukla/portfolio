@@ -42,11 +42,23 @@ const SECTION_IDS = [
   { id: 'contact', label: 'Contact' }
 ] as const;
 
+const MOBILE_BREAKPOINT = 768;
+
 export const SectionNavigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
+  const [isDesktop, setIsDesktop] = useState(false);
   const sections = useMemo(() => SECTION_IDS, []);
 
   useEffect(() => {
+    const mq = window.matchMedia(`(min-width: ${MOBILE_BREAKPOINT + 1}px)`);
+    setIsDesktop(mq.matches);
+    const handler = () => setIsDesktop(mq.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) return;
     const observerOptions = {
       root: null,
       rootMargin: '-50% 0px -50% 0px',
@@ -67,7 +79,7 @@ export const SectionNavigation = () => {
     });
 
     return () => observer.disconnect();
-  }, [sections]);
+  }, [sections, isDesktop]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -78,6 +90,8 @@ export const SectionNavigation = () => {
       });
     }
   };
+
+  if (!isDesktop) return null;
 
   return (
     <motion.nav
